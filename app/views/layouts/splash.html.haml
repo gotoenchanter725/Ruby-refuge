@@ -1,0 +1,9 @@
+!!!
+%html{lang: I18n.locale}
+  %head
+    = render 'layouts/head'
+  %body
+    .splash-background
+      = render 'layouts/navigation'
+      .container
+        = yield

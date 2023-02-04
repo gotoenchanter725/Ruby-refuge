@@ -1,0 +1,58 @@
+{
+  "name": "refugerestrooms",
+  "description": "refuge  heroku app.json",
+  "scripts": {
+    "postdeploy": "bundle exec rake db:migrate"
+  },
+  "env": {
+    "AKISMET_KEY": {
+      "required": true
+    },
+    "BUGSNAG_API_TOKEN": {
+      "required": true
+    },
+    "DEVISE_SECRET_KEY": {
+      "required": true
+    },
+    "EMAIL": {
+      "required": true
+    },
+    "EMAIL_PASSWORD": {
+      "required": true
+    },
+    "GOOGLE_MAPS_API_KEY": {
+      "required": true
+    },
+    "LANG": {
+      "required": true
+    },
+    "RACK_ENV": {
+      "required": true
+    },
+    "RAILS_ENV": {
+      "required": true
+    },
+    "RAILS_SECRET_KEY": {
+      "required": true
+    },
+    "RAILS_SERVE_STATIC_FILES": {
+      "required": true
+    },
+    "SECRET_KEY_BASE": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}

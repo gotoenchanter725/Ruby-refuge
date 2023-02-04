@@ -1,0 +1,55 @@
+.navbar-default{
+  padding: 5px 0px;
+  background-color: transparent;
+  border-color: transparent;
+
+  .navbar-brand {
+    color: white;
+    width: 16em;
+    padding: 13.5px 60px;
+    &:hover {
+      color: white;
+    }
+    &:focus {
+      color: $light-purple;
+    }
+  }
+
+  ul.navbar-nav > li > a {
+    font-size: 10pt;
+    color: white;
+    &:hover, &:focus {
+      color: $light-purple;
+    }
+  }
+
+  .navbar-toggle {
+    color: white;
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+
+  .toiletLogo {
+      width: 45px;
+      height: 45px;
+      background-image: asset-url("logo-100x100.png");
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      position: relative;
+      float: left;
+      cursor: pointer;
+      top: 2px
+  }
+
+  .dropdown-menu > li  {
+    &:not(:last-child) {
+      border-bottom: 1px solid $light-gray;
+    }
+
+    > a {
+      white-space: normal;
+    }
+  }
+}

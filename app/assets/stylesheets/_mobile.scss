@@ -1,0 +1,100 @@
+// Pixel Density-Related Rules
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+    body .splash-background {
+        background-image: image-url('city-photo-2x.jpg');
+    }
+}
+
+// Screen Width-Related Rules
+
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+    .navbar-default .toiletLogo {
+        top: 8px;
+    }
+}
+
+@media only screen and (max-width: 640px), only screen and (max-device-width: 640px) {
+    main, main .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .form-vertical {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .fontLarge {
+        font-size: 110px;
+        line-height: 110px;
+    }
+    .showPageItem .itemInfo {
+        left: 35%;
+    }
+
+    // Show restroom page
+    // Item
+    .showPageItem {
+        .listItemImage {
+            margin: 10px 0 0 10px;
+        }
+        .itemInfo {
+            position: absolute;
+            top: 10px;
+            bottom: 10px;
+            left: 100px;
+            right: 95px;
+            overflow: none;
+        }
+    }
+    .showPageContent {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+    .container {
+        width: 100%;
+    }
+    .searchBar {
+        font-size: 0.7rem;
+    }
+
+    #mapArea {
+        height: 200px;
+    }
+    .fontLarge {
+        font-size: 70px;
+        line-height: 70px;
+    }
+    .showPageItem .itemName {
+        font-size: 15px;
+    }
+    a.thumbsButton.thumbsButton {
+        font-size: 18px;
+        text-align: right;
+        padding-right: 5px;
+    }
+    .thumbsDown {
+        background-image: url('thumbsDownSmall.jpg');
+    }
+    .thumbsUp {
+        background-image: url('thumbsUpSmall.jpg');
+    }
+    .thumbsButton {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 342px), only screen and (max-device-width: 344px) {
+    button.splash-add-restroom-btn > i.fa-plus-square-o {
+        margin-left: 2%;
+    }
+    .nav-column {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+a.iconLink:hover {
+    text-decoration: none;
+}

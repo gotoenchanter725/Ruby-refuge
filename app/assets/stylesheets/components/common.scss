@@ -1,0 +1,147 @@
+/* IE < 8 */
+.clearfix:before, .clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+// Text formatting
+.centered-text {
+  text-align: center
+}
+
+.text-padding {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+input {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.form-control{
+  color: black;
+}
+
+h1 {
+    padding: 5px;
+    text-align: center;
+}
+
+.fontLarge {
+    font-size: 150px;
+    line-height: 150px;
+}
+
+p.p-text-sizebump, .p-text-sizebump p {
+    font-size: 1.1em;
+}
+
+.fadedText {
+    color: $gray;
+}
+
+// Headroom / Footroom Classes
+.min-headroom {
+  margin-top: 10px
+}
+
+.headroom {
+  margin-top: 20px
+}
+
+.more-headroom {
+  margin-top: 40px
+}
+
+.even-more-headroom {
+  margin-top: 60px
+}
+
+.footroom {
+  margin-bottom: 20px
+}
+
+// Buttons
+.btn-dark-purple {
+  color: white;
+  background-color: $dark-purple;
+}
+
+.btn-purple {
+  color: white;
+  background-color: transparentize($purple, 0.1);
+  &:hover, &:focus {
+    color: white
+  }
+}
+
+.btn-light-purple {
+  color: white;
+  background-color: $light-purple;
+  border-color: $light-purple;
+
+  &:hover, &:focus {
+    color: white;
+    background-color: $light-purple;
+    border-color: $light-purple;
+  }
+}
+
+.linkbutton {
+    border: none;
+    position: relative;
+    border-radius: $rounded-corners;
+    padding: 10px;
+    cursor: pointer;
+    background-color: $light-purple;
+    color: #FFFFFF;
+
+    &:hover {
+      color:white;
+    }
+
+    &.active, .active:focus {
+      background-color: $purple;
+    }
+}
+
+// Footer
+footer {
+    overflow: hidden;
+    text-align: center;
+    font-size: 8pt;
+    color: #41326b;
+    background-color: #ffffff;
+    margin-top: 15px;
+}
+
+.iconLink {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 4px;
+}
+
+.icon {
+    color: $purple;
+    &.fa-github-square:hover {
+        color: #808080;
+    }
+    &.fa-twitter-square:hover {
+        color: #5EA9DD;
+    }
+    &.fa-facebook-square:hover {
+        color: #3B5998;
+    }
+    &.fa-envelope:hover {
+        color: #BE1E2D;
+    }
+}
